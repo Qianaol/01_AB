@@ -1,0 +1,19 @@
+/* Eighth screen */
+
+.ourTeachers {
+  padding: 65px 0;
+  .block_header {
+    margin-bottom: 20px;
+  }
+  .block {
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .block img {
+    width: 100%;
+    height: auto;
+    max-width: 370px;
+  }
+}

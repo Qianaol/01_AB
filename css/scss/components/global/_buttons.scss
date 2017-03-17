@@ -1,0 +1,51 @@
+/* Buttons */
+
+.singUpLesson {
+  background-color: #fff;
+  display: block;
+  font-size: 1.13em;
+  margin: 0 auto 96px;
+  max-width: 370px;
+  width: 100%;
+  padding: 16px 40px;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease;
+  &.singUpLesson-red {
+    border: 4px solid #df1626;
+    &:hover {
+      color: #fff;
+      background-color: #df1626;
+    }
+  }
+  &.singUpLesson-black {
+    border: 4px solid #000;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+  &.singUpLesson-darkBg {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  &.singUpLesson-whiteBg {
+    background-color: transparent;
+  }
+  &.singUpLesson-arrow {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      width: 14px;
+      height: 16px;
+      background: transparent url(../img/arrow.png) no-repeat center center;
+      background-size: cover;
+      margin-top: -8px;
+    }
+  }
+  &.singUpLesson-table {
+    
+  }
+}

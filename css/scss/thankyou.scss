@@ -1,0 +1,54 @@
+/* Global imports */
+
+@import "components/global/_reset.scss";
+@import "components/global/_fonts.scss";
+@import "components/global/_global.scss";
+
+@import "components/global/_buttons.scss";
+@import "components/global/_scroll.scss";
+
+/* Thank you page */
+
+.tankyou_wrapper {
+  .thnakyou_section_header {
+    margin-top: 300px;
+  }
+  .header_line-withShadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 35px;
+    width: 100%;
+  }
+  .thankyou-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -215px;
+    right: 0;
+    top: 34px;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    max-width: 442px;
+  }
+  .thankyou-goback {
+    background-color: #fff;
+    display: block;
+    font-size: 18px;
+    margin: 0 auto 96px;
+    max-width: 370px;
+    width: 100%;
+    padding: 16px 40px;
+    position: relative;
+    text-align: center;
+    transition: all .2s ease;
+    border: 4px solid #df1626;
+    &:hover {
+      color: #fff;
+      background-color: #df1626;
+    }
+  }
+}
+
+
+/* Media queries */
+
+@import "components/media_queries/_mediaquery.scss";

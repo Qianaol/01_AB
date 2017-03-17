@@ -1,0 +1,63 @@
+/* Second screen */
+
+.whyDesign {
+  background-color: #fff;
+  padding: 45px 0 65px;
+  .section_header_block {
+    margin-bottom: 20px;
+  }
+  .section_header {
+    h2 {
+      position: relative;
+      z-index: 20;
+    }
+  }
+  .line-gray {
+    height: 1px;
+    background-color: #d7d7d7;
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    z-index: 10;
+  }
+  .whyDesign_block {
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.07);
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+    height: 270px;
+    margin: 50px auto 0;
+    width: 270px;
+    .icon {
+      background-image: url(../img/svg-sprite.svg);
+      background-size: 1108px 1108px;
+      height: 96px;
+      width: 96px;
+      &-1 {
+        background-position: -692px 335px;
+      }
+      &-2 {
+        background-position: -554px 335px;
+      }
+      &-3 {
+        background-position: -692px 475px;
+      }
+      &-4 {
+        background-position: -554px 475px;
+      }
+    }
+  }
+  .whyDesign_text {
+    text-align: center;
+    span {
+      display: inline-block;
+      font-size: 1.13em;
+      line-height: 22px;
+      margin-top: 20px;
+      text-align: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

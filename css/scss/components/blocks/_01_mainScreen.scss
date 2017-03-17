@@ -1,0 +1,250 @@
+/* Logo */
+.logo-wrapper {
+  position: absolute;
+  top: -10px;
+  z-index: 20;
+  left: 50%;
+  margin-left: -42px;
+  img {
+    height: auto;
+    margin-top: 17px;
+    max-width: 442px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+/* First screen */
+.mainScreen_nav {
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    margin-left: -216px;
+    border: 216px solid transparent;
+    border-top: 240px solid #fff;
+    z-index: 10;
+  }
+  .container {
+    position: relative;
+    z-index: 50;
+  }
+  .nav {
+    li {
+      a {
+        color: #fff;
+        font: 400 1.13em 'Quiza Pro', sans-serif;
+        padding: 30px 16px;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .nav-left {
+    float: left;
+  }
+  .nav-right {
+    float: right;
+  }
+  .navItem {
+    display: inline-block;
+    a {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        opacity: 0;
+        height: 14px;
+        width: 14px;
+        background-color: #df1626;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -7px;
+        transition: all 0.25s ease;
+      }
+      &:hover {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.mnu_icon {
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  display: none;
+  height: 40px;
+  margin: 20px 0;
+  position: relative;
+  width: 40px;
+  &-left {
+    float: left;
+    background-image: url(../img/svg-sprite.svg);
+    background-size: 1108px 1108px;
+    background-position: -73px -234px;
+    &.active {
+      background-image: url(../img/svg-sprite.svg);
+      background-size: 1108px 1108px;
+      background-position: -140px -234px;
+    }
+    p {
+      right: -90px;
+    }
+  }
+  &-right {
+    float: right;
+    background-image: url(../img/svg-sprite.svg);
+    background-size: 1108px 1108px;
+    background-position: -227px -234px;
+    &.active {
+      background-image: url(../img/svg-sprite.svg);
+      background-size: 1108px 1108px;
+      background-position: -298px -234px;
+    }
+    p {
+      left: -60px;
+    }
+  }
+  .mnu_icon-text {
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    margin-top: -9px;
+  }
+  .mobile_icon_tel {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.mobile_mnu {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  padding: 10px 30px;
+  position: fixed;
+  right: -180px;
+  top: 96px;
+  .navItem {
+    display: block;
+    a {
+      color: #fff;
+      font: 400 1em 'Quiza Pro', sans-serif;
+      padding: 10px 0;
+      text-align: left;
+      &:after {
+        left: -30px;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+  }
+}
+
+.mainScreen_content {
+  padding: 25px 0;
+  h1 {
+    color: #fff;
+    font: bold 2.5em 'Quiza Pro', sans-serif;
+    padding: 25px 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .section_header {
+    padding: 15px;
+    h2 {
+      padding: 20px 120px;
+      text-transform: lowercase;
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  h3 {
+    color: #fff;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .wrapper-durkBg {
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 50px;
+  }
+  .lineBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+  }
+  .lineBlock_item {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    line-height: 30px;
+    max-width: 25%;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+    span {
+      font-weight: bold;
+    }
+    &:before,
+    &:after {
+      content: '';
+      background-color: #df1626;
+      position: absolute;
+      height: 4px;
+      width: 70px;
+      left: 50%;
+      margin-left: -35px;
+    }
+    &:before {
+      top: -2px;
+    }
+    &:after {
+      bottom: -2px;
+    }
+  }
+  .singUpLesson {
+    margin-bottom: 40px;
+  }
+}
+
+.scroll-centerAlign {
+  text-align: center;
+  position: relative;
+  animation: scroll 1s infinite linear;
+}
+
+@keyframes scroll {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.rs-wrap {
+  max-width: 630px !important;
+  width: 100% !important;
+}

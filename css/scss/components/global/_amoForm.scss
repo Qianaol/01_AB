@@ -1,0 +1,43 @@
+/* amoCRM */
+
+.amoCRM_form {
+  margin: 0 auto;
+  max-width: 390px;
+  width: 100%;
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    &:first-child {
+      margin-top: 45px;
+    }
+  }
+  label {
+    background-color: #fff;
+    font-size: 0.88em;
+    left: 20px;
+    padding: 0 5px;
+    position: absolute;
+    top: -6px;
+  }
+  input,
+  button {
+    border: 4px solid #e1e1e1;
+    width: 100%;
+  }
+  input {
+    padding: 10px 20px;
+  }
+  button {
+    background-color: #fff;
+    border-color: #df1626;
+    font-size: 1.25em;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    &:hover {
+      background-color: #df1626;
+      color: #fff;
+    }
+  }
+}

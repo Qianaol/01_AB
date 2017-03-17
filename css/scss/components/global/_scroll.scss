@@ -1,0 +1,8 @@
+/* Scroll */
+
+.nicescroll-rails {
+  width: 10px !important;
+  & > div {
+    width: 10px !important;
+  }
+}

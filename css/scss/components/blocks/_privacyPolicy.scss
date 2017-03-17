@@ -1,0 +1,47 @@
+.privacyPolicy {
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding: 50px 50px 30px;
+  overflow: scroll;
+  &.active {
+    display: block;
+  }
+  .privacyPolicy_close {
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid gray;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.25s ease;
+    &:hover {
+      border-color: #df1626;
+      background-color: #df1626;
+      color: #fff;
+    }
+  }
+  p {
+    margin: 20px 0;
+    text-align: justify;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    li {
+      color: #df1626;
+      list-style-type: square;
+      span {
+        color: #0b0b0b;
+      }
+    }
+  }
+}

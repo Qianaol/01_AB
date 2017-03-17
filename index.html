@@ -1,0 +1,4219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Atlant Black</title>
+  <!-- Bootstrap -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Oleksandr Khrypun">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/refineslide.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
+
+
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/favicon/manifest.json">
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+  <noscript><p>Ваш браузер не поддерживает скрипты!</p></noscript>
+  <div class="modal_bgLayout"></div>
+  <div class="modal">
+    <div class="modal_close">&#10006;</div>
+    <div class="section_header">
+      <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+
+      <h2 class="header-onWhite">Заполните форму</h2>
+
+      <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+    </div>
+    <p>и наш менеджер свяжеться с вами</p>
+
+    <form action="zakaz.php" method="post" class="amoCRM_form">
+      <div class="input-wrapper">
+        <label for="input-name">Ваше имя</label>
+        <input id="input-name" type="text" placeholder="ФИО" required>
+      </div>
+      <div class="input-wrapper">
+        <label for="input-tel">Телефон</label>
+        <input id="input-tel" type="text" placeholder="+38 (XXX) XXX-XX-XX" required>
+      </div>
+      <button type="submit">Записаться на бесплатный урок</button>
+    </form>
+  </div>
+
+  <div class="wrapper mainScreen-wrapper">
+    <div class="logo-wrapper">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+
+    <div class="wrapper mainScreen_nav">
+      <div class="wrapper wrapper-durkBg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="clearfix">
+                <ul class="nav nav-left">
+
+                  <li class="navItem">
+                    <a href="#levelTable">Наши курсы</a></li>
+
+                  <li class="navItem">
+                    <a href="#whatYouGet">Гарантии</a></li>
+                  <li class="navItem">
+                    <a href="/" class="getFreeLessonBtn">Записаться</a></li>
+                </ul>
+                <ul class="nav nav-right">
+                  <li class="navItem">
+                    <a href="#forWhom">Для кого</a></li>
+                  <!--
+                  <li class="navItem">
+                    <a href="#ourTeachers">Преподаватели</a></li>
+-->
+                  <li class="navItem">
+                    <a href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="mnu_icon-wrapper clearfix">
+                <div class="mnu_icon mnu_icon-left">
+                  <a class="mobile_icon_tel" href="tel:+380632276114">
+                    <!--                    <object data="img/svg-sprite.svg" type="image/svg+xml"></object>-->
+                    <p class="mnu_icon-text">Позвонить</p>
+                  </a>
+                </div>
+                <div class="mnu_icon mnu_icon-right">
+                  <p class="mnu_icon-text">Меню</p>
+                </div>
+              </div>
+              <ul class="mobile_mnu" data-toggle="true">
+
+                <li class="navItem">
+                  <a href="#levelTable">Наши курсы</a></li>
+
+                <li class="navItem">
+                  <a href="#whatYouGet">Гарантии</a></li>
+                <li class="navItem">
+                  <a href="/">Записаться</a></li>
+                <li class="navItem">
+                  <a href="#ourGuarantees">Для кого?</a></li>
+                <!--
+                <li class="navItem">
+                  <a href="#ourTeachers">Преподаватели</a></li>
+-->
+                <li class="navItem">
+                  <a href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="wrapper mainScreen_content">
+      <div class="wrapper section_header_block">
+        <h1>Мы научим тебя делать</h1>
+        <div class="wrapper">
+          <div class="section_header">
+            <img src="img/left-large-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+
+            <ul class="demo">
+              <li class="group">
+                <h2 class="header-onWhite">Веб-проекты под ключ</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">&nbsp;&nbsp;&nbsp;Догорие веб-сайты&nbsp;&nbsp;&nbsp;</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Крутые Лендинг Пейдж</h2>
+              </li>
+            </ul>
+
+
+            <img src="img/right-large-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+          </div>
+        </div>
+        <h3>за 3 месяца</h3>
+      </div>
+      <div class="wrapper wrapper-durkBg">
+        <div class="container">
+          <div class="row">
+            <div class="lineBlock">
+              <div class="lineBlock_item">
+                <span>104 часа</span> обучения
+              </div>
+              <div class="lineBlock_item">
+                <span>8 ключевых навыков</span> сайтостроения
+              </div>
+              <div class="lineBlock_item">
+                <span>2 недели практики</span> в IT компании
+              </div>
+              <div class="lineBlock_item">
+                <span>Живые лекции</span> в Киеве
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на бесплатный урок</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <div class="scroll-centerAlign">
+              <div>
+                <img src="img/scroll.png" alt="scroll icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrapper calculator">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Калькулятор доходов дизайнера</h2>
+        <img src="img/right-bracket.png" alt="" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="calcWrapper">
+            <div class="block_header">
+              Сколько дней в месяц ты бы хотел работать?
+            </div>
+            <div class="block block_1 block-shadow">
+              <div class="block_item">
+                <div class="block_img block_img-1"></div>
+                <p>21 день
+                  <br>в офисе</p>
+                <input id="work20Job" class="workTime" type="radio" name="workTime" data-time="21" checked>
+                <div class="block_item_diamond">
+                  <div class="block_item_diamond_inner"></div>
+                </div>
+              </div>
+              <div class="block_item">
+                <div class="block_img block_img-2"></div>
+                <p>28 дней
+                  <br>на фрилансе</p>
+                <input id="work10" class="workTime" type="radio" name="workTime" data-time="28">
+                <div class="block_item_diamond">
+                  <div class="block_item_diamond_inner"></div>
+                </div>
+              </div>
+              <div class="block_item">
+                <div class="block_img block_img-3"></div>
+                <p>21 день
+                  <br>на фрилансе</p>
+                <input id="work20" class="workTime" type="radio" name="workTime" data-time="21">
+                <div class="block_item_diamond">
+                  <div class="block_item_diamond_inner"></div>
+                </div>
+              </div>
+              <div class="block_item">
+                <div class="block_img block_img-4"></div>
+                <p>14 деней
+                  <br>на фрилансе</p>
+                <input id="work30" class="workTime" type="radio" name="workTime" data-time="14">
+                <div class="block_item_diamond">
+                  <div class="block_item_diamond_inner"></div>
+                </div>
+              </div>
+            </div>
+            <div class="block_header">
+              Выбери навыки которые ты хотел бы в себе улучшить:
+            </div>
+            <div class="block block_2">
+              <div class="block_item block_item-left block-shadow">
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourBadLevel" class="input" type="checkbox" name="yourLevel" data-price="50" data-time="2" checked>
+                  <p>Дизайн десктоп версий сайтов</p>
+                </div>
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourMiddleLevel" class="input" type="checkbox" name="yourLevel" data-price="75" data-time="1">
+                  <p>Дизайн мобильных версий сайтов</p>
+                </div>
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourTopLevel" class="input" type="checkbox" name="yourLevel" data-price="75" data-time="1">
+                  <p>Адаптивный дизайн сайтов</p>
+                </div>
+              </div>
+              <div class="block_item block_item-right block-shadow">
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourUi" class="input" type="checkbox" data-price="300" data-time="1">
+                  <p>UI/UX дизайн</p>
+                </div>
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourFE" class="input" type="checkbox" data-price="100" data-time="1">
+                  <p>Верстка</p>
+                </div>
+                <div>
+                  <div class="switcher">
+                    <div class="switcher_point"></div>
+                    <div class="switcher-left"></div>
+                    <div class="switcher-right"></div>
+                  </div>
+                  <input id="yourAdaptive" class="input" type="checkbox" data-price="75" data-time="0.5">
+                  <p>Адаптивная верстка</p>
+                </div>
+              </div>
+            </div>
+            <div class="block block_lines">
+              <div class="block_line block_item-left block_line-left active"></div>
+              <div class="block_line block_item-right block_line-right"></div>
+            </div>
+            <div class="block block_3">
+              <div class="block-shadow">
+                <div class="block_item block_item-left">
+                  <div>
+                    <div class="switcher">
+                      <div class="switcher_point"></div>
+                      <div class="switcher-left"></div>
+                      <div class="switcher-right"></div>
+                    </div>
+                    <p>Навык копирайтинга</p>
+                    <input id="yourCop" class="input" type="checkbox" data-price="100" data-time="0.5">
+                  </div>
+                  <div>
+                    <div class="switcher">
+                      <div class="switcher_point"></div>
+                      <div class="switcher-left"></div>
+                      <div class="switcher-right"></div>
+                    </div>
+                    <p>Навык нейрокопирайтинга продающих заголовков</p>
+                    <input id="yourHead" class="input" type="checkbox" data-price="75" data-time="0.25">
+                  </div>
+                </div>
+                <div class="block_item block_item-right">
+                  <div>
+                    <div class="switcher">
+                      <div class="switcher_point"></div>
+                      <div class="switcher-left"></div>
+                      <div class="switcher-right"></div>
+                    </div>
+                    <p>Понимание маркетинга и продаж с лендингов сайтов</p>
+                    <input id="yourCEO" class="input" type="checkbox" data-price="200" data-time="1">
+                  </div>
+                  <div class="disabled">
+                    <div class="switcher disabled">
+                      <div class="switcher_point"></div>
+                      <div class="switcher-left"></div>
+                      <div class="switcher-right"></div>
+                    </div>
+                    <p>Умение продвигать свои идеи и делать проект под ключ</p>
+                    <input id="yourKey" class="input disabled" type="checkbox" data-price="500" data-time="0">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="result">
+            <p>Улучшив выбранные навыки, ты сможешь зарабарывать: </p>
+            <div id="result-price"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="result">
+            <p>Количество проектов которые вы сможете сделать за выбранное время работы: </p>
+            <div id="result-projects"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 button-right">
+          <button class="singUpLesson singUpLesson-red getFreeLessonBtn" type="button">Записаться на бесплатный урок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="canLearn wrapper">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Навыки, которыми ты овладеешь</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row_first">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-1"></div>
+                <p class="text">Адаптивный дизайн сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Дизайн веб-страниц, обеспечивающий правильное отображение сайта на различных устройствах, подключённых к интернету и динамически подстраивающийся под заданные размеры окна браузера</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-2"></div>
+                <p class="text">UI/UX проектирование</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Разработка пользовательских интерфейсов при грамотном подходе строится таким образом, чтобы создать его максимально привлекательным и удобным для оптимизации его взаимодействия с пользователем</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-3"></div>
+                <p class="text">Адаптивная верстка</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Подход, предполагающий изменение дизайна в зависимости от поведения пользователя, размера экрана, платформы и ориентации девайса.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row_second">
+        <div class="col-xs-12 col-sm-4 col-md-6">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-4"></div>
+                <p class="text">Дизайн мобильных версий сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Для любой коммерческой компании вывод очевиден: если компания планирует развивать свой бизнес, увеличивать объем продаж и доходность за счет увеличения количества посетителей сайта, то организации просто необходимо задуматься о создании мобильной версии сайта.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-left">
+              <div class="block_inner block_inner_face block_inner_face-left">
+                <div class="block_img block_img-5"></div>
+                <p class="text">Веб-разработка</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-left">
+                <ul>
+                  <li class="li">Процесс создания веб-страницы, с помощью текстового или визуального редактора</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-right">
+              <div class="block_inner block_inner_face block_inner_face-right">
+                <div class="block_img block_img-6"></div>
+                <p class="text">Копирайтинг</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-right">
+                <ul>
+                  <li class="li">Профессиональная деятельность по написанию рекламных и презентационных текстов</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row_third">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-right">
+              <div class="block_inner block_inner_face block_inner_face-right">
+                <div class="block_img block_img-7"></div>
+                <p class="text">Маркетинг и продажи</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-right">
+                <ul>
+                  <li class="li">Организация производства и сбыта продукции, основанная на изучении потребности рынка в товарах и услугах</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-left">
+              <div class="block_inner block_inner_face block_inner_face-left">
+                <div class="block_img block_img-8"></div>
+                <p class="text">Проекты под ключ</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-left">
+                <ul>
+                  <li class="li">Любой проект, который строится или производится компанией, которая в итоге передает его в полностью завершенном виде заказчику.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-6">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-9"></div>
+                <p class="text">Дизайн десктопных версий сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Дизайн сайта – это внешнее его оформление, которое призвано, как минимум не отпугнуть посетителя Вашего интернет-ресурса,а наоборот: завлечь, заинтересовать и продать вашу услугу либо продукт.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper whyDesign" id="whyDesign">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Почему веб-дизайн и почему сейчас?</h2>
+        <img src="img/right-bracket.png" alt="bracket" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="wrapper">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="whyDesign_block">
+              <div class="icon icon-1"></div>
+            </div>
+            <div class="whyDesign_text">
+              <span>Средний доход дизайнера 25000 в месяц</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="whyDesign_block">
+              <div class="icon icon-2"></div>
+            </div>
+            <div class="whyDesign_text">
+              <span>Возможность работать в любой точке мира</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="whyDesign_block">
+              <div class="icon icon-3"></div>
+            </div>
+            <div class="whyDesign_text">
+              <span>Чтобы стать дизайнером, достаточно 3 месяца</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="whyDesign_block">
+              <div class="icon icon-4"></div>
+            </div>
+            <div class="whyDesign_text">
+              <span>Будучи дизайнером можно воплотить самые яркие идеи</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper forWhom" id="forWhom">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+
+        <h2 class="header-white header-onWhite">Для кого этот курс?</h2>
+
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+          <div class="columnBlock-wrapper">
+            <div class="columnBlock_leftPart">
+              <div class="shape icon icon-1"></div>
+            </div>
+            <div class="columnBlock_righttPart">
+              <p>Для тех, кто хочет сменить
+                <br/>вид деятельности на более творческий</p>
+            </div>
+          </div>
+          <div class="columnBlock-wrapper">
+            <div class="columnBlock_leftPart">
+              <div class="shape icon icon-2"></div>
+            </div>
+            <div class="columnBlock_righttPart">
+              <p>Для тех, кому интересен freelance
+                <br/>и работа в онлайне</p>
+            </div>
+          </div>
+        </div>
+        <div class="column-right col-md-6 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+          <div class="columnBlock-wrapper">
+            <div class="columnBlock_leftPart">
+              <div class="shape icon icon-3"></div>
+            </div>
+            <div class="columnBlock_righttPart">
+              <p>Для тех, кто стремится пробиться в
+                <br>IT сферу</p>
+            </div>
+          </div>
+          <div class="columnBlock-wrapper">
+            <div class="columnBlock_leftPart">
+              <div class="shape icon icon-4"></div>
+            </div>
+            <div class="columnBlock_righttPart">
+              <p>Для тех, кто хочет получить крутую
+                <br/>работу и развиваться в этом направлении</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper formBlock">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">заинтересовало?</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+          <p>Тогда записывайся на наш бесплатный урок</p>
+        </div>
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+          <form action="zakaz.php" method="post" class="amoCRM_form">
+            <div class="input-wrapper">
+              <label for="input-name-1">Ваше имя</label>
+              <input id="input-name-1" type="text" placeholder="ФИО" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="input-tel-1">Телефон</label>
+              <input id="input-tel-1" type="text" placeholder="+38 (XXX) XXX-XX-XX" required>
+            </div>
+            <button type="submit">Записаться на бесплатный урок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper whatYouGet" id="whatYouGet">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-white header-onWhite">Наши ученики получат</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container whatYouGet_content">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <p><span class="animateNumber-1">110</span></p>
+            <p>часов изучения
+              <br/>практического дизайна</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <p class="animateNumber-2">42</p>
+            <p>авторских уроков по
+              <br>прокачке навыков</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <p class="animateNumber-3">3</p>
+            <p>месяца
+              <br>обучения</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <p class="animateNumber-4">206</p>
+            <p>часов практических
+              <br>занятий</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper ourGuarantees" id="ourGuarantees">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Мы гарантируем</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container content_container">
+      <div class="row">
+        <div class="block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <div class="sprite sprite-1"></div>
+            <p>Персональную поддержку
+              <br>преподавателей-практиков</p>
+          </div>
+          <div class="blockItem">
+            <div class="sprite sprite-2"></div>
+            <p>Все необходимые материалы
+              <br>по обучению</p>
+          </div>
+        </div>
+        <div class="block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="blockItem">
+            <div class="sprite sprite-3"></div>
+            <p>Создание личного портфолио
+              <br>с примерами ваших работ</p>
+          </div>
+          <div class="blockItem">
+            <div class="sprite sprite-4"></div>
+            <p>Новые профессиональные
+              <br>контакты и знакомства</p>
+          </div>
+        </div>
+        <div class="block col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="blockItem blockItem-last">
+            <div class="sprite sprite-5"></div>
+            <p>Двухнедельная практика в
+              <br>IT компании после курсов</p>
+          </div>
+          <div class="blockItem">
+            <div class="sprite sprite-6"></div>
+            <p>Навыки прототипирования и
+              <br>работы в графических редакторах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper ourAim" id="ourAim">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-white header-onWhite">Наша цель - ваш профессионализм</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Нам надоело видеть тонны отвратительных дизайнерских работ, дизайнеров и разработчиков с отсутствием вкуса и навыков, а так же шарлатанов, которые хороши лишь на словах. Наша миссия - это воспитание нового поколения дизайнеров,которые своими кейсами докажут всему миру, что они - лучшие.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на бесплатный урок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper levelTable" id="levelTable">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="prev">
+            <div class="prev_head prev_head-1">
+              <div class="prev_icon prev_icon-1"></div>
+              <div class="prev_header">Junior</div>
+            </div>
+            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_footer">
+              <div class="prev_footer_item">
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Часов:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Цена:</div>
+                  <div class="prev_footer_price-right">7800 грн</div>
+                </div>
+              </div>
+              <div class="prev_footer_item">
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseJunior">Программа курса</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="prev">
+            <div class="prev_head prev_head-2">
+              <div class="prev_icon prev_icon-2"></div>
+              <div class="prev_header">Junior</div>
+            </div>
+            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_footer">
+              <div class="prev_footer_item">
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Часов:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Цена:</div>
+                  <div class="prev_footer_price-right">7800 грн</div>
+                </div>
+              </div>
+              <div class="prev_footer_item">
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseMiddle">Программа курса</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="prev">
+            <div class="prev_head prev_head-3">
+              <div class="prev_icon prev_icon-3"></div>
+              <div class="prev_header">Junior</div>
+            </div>
+            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_footer">
+              <div class="prev_footer_item">
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Часов:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Цена:</div>
+                  <div class="prev_footer_price-right">7800 грн</div>
+                </div>
+              </div>
+              <div class="prev_footer_item">
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseSenior">Программа курса</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="prev">
+            <div class="prev_head prev_head-4">
+              <div class="prev_icon prev_icon-4"></div>
+              <div class="prev_header">Junior</div>
+            </div>
+            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_footer">
+              <div class="prev_footer_item">
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Часов:</div>
+                  <div class="prev_footer_price-right">3 месяца</div>
+                </div>
+                <div class="prev_footer_price">
+                  <div class="prev_footer_price-left">Цена:</div>
+                  <div class="prev_footer_price-right">7800 грн</div>
+                </div>
+              </div>
+              <div class="prev_footer_item">
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseArtDer">Программа курса</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="wrapper ourTeachers" id="ourTeachers">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Наши преподаватели</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+          <div class="block">
+            <img src="img/person-1.png" alt="Teacher">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+          <div class="block">
+            <img src="img/person-2.png" alt="Teacher">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+          <div class="block">
+            <img src="img/person-3.png" alt="Teacher">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper ourCourses" id="ourCourses">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Наши курсы</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="course_row">
+        <div class="course course-1">
+          <div class="course_date">
+            <span>15</span>
+            <span>марта</span>
+          </div>
+          <div class="course_head">
+            <div class="course_image course_image-5"></div>
+            <div class="course_line-red"></div>
+            <h3 class="course_header">Дизайн и никаких гвоздей</h3>
+            <div class="course_text">
+              <p>Программа курса:</p>
+            </div>
+          </div>
+          <div class="course_content">
+            <div class="course_text">
+              <ul>
+                <li><span>Введение в веб-дизайн;</span></li>
+                <li><span>Модульные сетки;</span></li>
+                <li><span>Прототипирование и скетчинг;</span></li>
+                <li><span>Практика и теория графического дизайна;</span></li>
+                <li><span>Типографика;</span></li>
+                <li><span>Анализ и поиск идей;</span></li>
+                <li><span>Первый сайт;</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="course_footer">
+            <div class="course_price">Стоимость курса: <span>9 300 грн</span></div>
+            <div class="course_btns">
+              <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+              <button type="button" class="singUpLesson singUpLesson-black">Программа курса</button>
+            </div>
+          </div>
+        </div>
+        <div class="course course-2">
+          <div class="course_date">
+            <span>18</span>
+            <span>марта</span>
+          </div>
+          <div class="course_head">
+            <div class="course_image course_image-5"></div>
+            <div class="course_line-red"></div>
+            <h3 class="course_header">Пользовательские интерфейсы</h3>
+            <div class="course_text">
+              <p>Программа курса:</p>
+            </div>
+          </div>
+          <div class="course_content">
+            <div class="course_text">
+              <ul>
+                <li><span>Анализ пользователя;</span></li>
+                <li><span>Кликабельный прототип;</span></li>
+                <li><span>Создание UI kit-а;</span></li>
+                <li><span>Первый блог;</span></li>
+                <li><span>Магазин;</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="course_footer">
+            <div class="course_price">Стоимость курса: <span>8 500 грн</span></div>
+            <div class="course_btns">
+              <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+              <button type="button" class="singUpLesson singUpLesson-black">Программа курса</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+  <div class="wrapper formBlock">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Хватит думать! Пора действовать!</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+          <p>Тогда записывайся на наш бесплатный урок</p>
+        </div>
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+          <form action="zakaz.php" method="post" class="amoCRM_form">
+            <div class="input-wrapper">
+              <label for="input-name-2">Ваше имя</label>
+              <input id="input-name-2" type="text" placeholder="ФИО" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="input-tel-2">Телефон</label>
+              <input id="input-tel-2" type="text" placeholder="+38 (XXX) XXX-XX-XX" required>
+            </div>
+            <button type="submit">Записаться на бесплатный урок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper contacts" id="contacts">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Как нас найти?</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-8 col-md-4 col-md-offset-0 col-lg-4">
+          <div class="block">
+            <div class="block_img block_img-1"></div>
+            <div class="block_content">
+              <a class="tel" href="tel:+380632276114">+380(63) 227-61-14</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-8 col-md-4 col-md-offset-0 col-lg-4">
+          <div class="block">
+            <div class="block_img block_img-2"></div>
+            <div class="block_content">
+              <p>г. Киев ул.</p>
+              <p>ул. Новоконстантиновская 1в</p>
+              <p>м. Тараса Шевченка - 12 мин.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-8 col-md-4 col-md-offset-0 col-lg-4">
+          <div class="block">
+            <div class="block_img block_img-3"></div>
+            <div class="block_content">
+              <a class="email" href="milto:academy@atlant.black"><span>academy@atlant.black</span></a>
+              <br>
+              <a class="email" href="milto:kiev.atlant.black@gmail.com"><span>kiev.atlant.black@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="map-wrapper">
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer wrapper" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4">ATLANT BLACK © 2016-2017</div>
+        <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4"><img src="img/footer-logo.png" alt="footer logo"></div>
+        <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4"><span class="privacyPolicy_btn" data-privacy="false">Политика конфеденциальности</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="underFooter-white wrapper"></div>
+
+  <div class="modal_bgLayout-table"></div>
+  <div class="table-wrapper">
+    <div class="modal_close">&#10006;</div>
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Введение</span> в веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Модульные</span> сетки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Прототипирование</span> и скетчинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Axure</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Photoshop</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Illustrator</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> графического дизайна</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Практические</span> занятия по графике</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Типографика</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> проекта и поиск идей</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Юзабилити</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> цвета</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Поиск</span> и подбор контента (фото, иконки, графика)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> шрифтов и шрифтовые комбинации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анимации</span> в веб-дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> композиции</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Полезные</span> сервисы для дизайнеров</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 44.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Верстака</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">HTML5</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">CSS</span>, CSS3</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">адаптивность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">кроссбраузернность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">ui/ux</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> UX</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> кликабельного прототипа в акшур</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> KIT</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Блог</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> анимации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 23.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающие</span> заголовки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Нейрокопирайтинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Скрытый</span> копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Манипуляции</span> сознанием пользователя</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">отрисовка</span> банеров для рекламы с заголовками</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Маркетинг и продажи</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Отслеживание</span> тенденций рынка</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Упаковка</span> продукта на сайт (подача бизнеса)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающий</span> маркетинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Дизайн</span> вирусного контента</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Проведение</span> маркетинговых исследований</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Брендинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Предпренимательское</span> мышление в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 16 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс по продаже себя</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> в компании</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> на фрилансе</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> с индивидуальными заказами</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Тонкости</span> психологии работодателей и заказчиков</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 8 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс <span class="header-toUpperCase">артдиректор</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продвижение</span> своих идей в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> проектов под ключ</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> помощников, подбор персонала</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Организация</span> своей WEB-студии</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+  </div>
+
+  <div class="modal_bgLayout-table-juniorMobile"></div>
+  <div class="table-wrapper-juniorMobile">
+    <div class="modal_close">&#10006;</div>
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Введение</span> в веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Модульные</span> сетки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Прототипирование</span> и скетчинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Axure</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Photoshop</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Illustrator</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> графического дизайна</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Практические</span> занятия по графике</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Типографика</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> проекта и поиск идей</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Юзабилити</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> цвета</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Поиск</span> и подбор контента (фото, иконки, графика)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> шрифтов и шрифтовые комбинации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анимации</span> в веб-дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> композиции</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Полезные</span> сервисы для дизайнеров</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 44.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Верстака</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">HTML5</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">CSS</span>, CSS3</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">адаптивность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">кроссбраузернность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">ui/ux</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> UX</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> кликабельного прототипа в акшур</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> KIT</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Блог</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> анимации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 23.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающие</span> заголовки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Нейрокопирайтинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Скрытый</span> копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Манипуляции</span> сознанием пользователя</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">отрисовка</span> банеров для рекламы с заголовками</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Маркетинг и продажи</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Отслеживание</span> тенденций рынка</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Упаковка</span> продукта на сайт (подача бизнеса)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающий</span> маркетинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Дизайн</span> вирусного контента</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Проведение</span> маркетинговых исследований</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Брендинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Предпренимательское</span> мышление в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 16 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс по продаже себя</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> в компании</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> на фрилансе</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> с индивидуальными заказами</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Тонкости</span> психологии работодателей и заказчиков</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 8 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс <span class="header-toUpperCase">артдиректор</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-2">Junior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продвижение</span> своих идей в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> проектов под ключ</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> помощников, подбор персонала</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Организация</span> своей WEB-студии</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrapper-middleMobile">
+    <div class="modal_close">&#10006;</div>
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Введение</span> в веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Модульные</span> сетки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Прототипирование</span> и скетчинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Axure</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Photoshop</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Illustrator</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> графического дизайна</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Практические</span> занятия по графике</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Типографика</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> проекта и поиск идей</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Юзабилити</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> цвета</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Поиск</span> и подбор контента (фото, иконки, графика)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> шрифтов и шрифтовые комбинации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анимации</span> в веб-дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> композиции</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Полезные</span> сервисы для дизайнеров</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 44.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Верстака</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">HTML5</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">CSS</span>, CSS3</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">адаптивность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">кроссбраузернность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">ui/ux</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> UX</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> кликабельного прототипа в акшур</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> KIT</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Блог</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> анимации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 23.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающие</span> заголовки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Нейрокопирайтинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Скрытый</span> копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Манипуляции</span> сознанием пользователя</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">отрисовка</span> банеров для рекламы с заголовками</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Маркетинг и продажи</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Отслеживание</span> тенденций рынка</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Упаковка</span> продукта на сайт (подача бизнеса)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающий</span> маркетинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Дизайн</span> вирусного контента</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Проведение</span> маркетинговых исследований</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Брендинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Предпренимательское</span> мышление в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 16 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс по продаже себя</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> в компании</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> на фрилансе</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> с индивидуальными заказами</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Тонкости</span> психологии работодателей и заказчиков</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 8 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс <span class="header-toUpperCase">артдиректор</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-3">Middle</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продвижение</span> своих идей в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> проектов под ключ</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> помощников, подбор персонала</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Организация</span> своей WEB-студии</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrapper-seniorMobile">
+    <div class="modal_close">&#10006;</div>
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Введение</span> в веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Модульные</span> сетки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Прототипирование</span> и скетчинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Axure</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Photoshop</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Illustrator</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> графического дизайна</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Практические</span> занятия по графике</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Типографика</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> проекта и поиск идей</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Юзабилити</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> цвета</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Поиск</span> и подбор контента (фото, иконки, графика)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> шрифтов и шрифтовые комбинации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анимации</span> в веб-дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> композиции</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Полезные</span> сервисы для дизайнеров</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 44.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Верстака</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">HTML5</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">CSS</span>, CSS3</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">адаптивность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">кроссбраузернность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">ui/ux</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> UX</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> кликабельного прототипа в акшур</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> KIT</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Блог</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> анимации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 23.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающие</span> заголовки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Нейрокопирайтинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Скрытый</span> копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Манипуляции</span> сознанием пользователя</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">отрисовка</span> банеров для рекламы с заголовками</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Маркетинг и продажи</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Отслеживание</span> тенденций рынка</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Упаковка</span> продукта на сайт (подача бизнеса)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающий</span> маркетинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Дизайн</span> вирусного контента</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Проведение</span> маркетинговых исследований</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Брендинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Предпренимательское</span> мышление в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 16 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс по продаже себя</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> в компании</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> на фрилансе</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> с индивидуальными заказами</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Тонкости</span> психологии работодателей и заказчиков</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 8 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс <span class="header-toUpperCase">артдиректор</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-4">Senior</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продвижение</span> своих идей в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> проектов под ключ</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> помощников, подбор персонала</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Организация</span> своей WEB-студии</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_no"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrapper-artMobile">
+    <div class="modal_close">&#10006;</div>
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Введение</span> в веб-дизайн</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Модульные</span> сетки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Прототипирование</span> и скетчинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Axure</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Photoshop</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> работы в Adobe Illustrator</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> графического дизайна</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Практические</span> занятия по графике</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Типографика</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> проекта и поиск идей</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Юзабилити</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Теория</span> цвета</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Поиск</span> и подбор контента (фото, иконки, графика)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> шрифтов и шрифтовые комбинации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анимации</span> в веб-дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Основы</span> композиции</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Полезные</span> сервисы для дизайнеров</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 44.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Верстака</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">HTML5</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">CSS</span>, CSS3</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">адаптивность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">кроссбраузернность</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">ui/ux</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Анализ</span> UX</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> кликабельного прототипа в акшур</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">bootstrap</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> KIT</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Блог</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">UI</span> анимации</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 23.5 часа
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающие</span> заголовки</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Нейрокопирайтинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Скрытый</span> копирайтинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Манипуляции</span> сознанием пользователя</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">отрисовка</span> банеров для рекламы с заголовками</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Интернет</span> магазин</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Маркетинг и продажи</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Отслеживание</span> тенденций рынка</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Упаковка</span> продукта на сайт (подача бизнеса)</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продающий</span> маркетинг</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Дизайн</span> вирусного контента</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Проведение</span> маркетинговых исследований</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Брендинг</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Предпренимательское</span> мышление в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 16 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс по продаже себя</p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> в компании</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> на фрилансе</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Работа</span> с индивидуальными заказами</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Тонкости</span> психологии работодателей и заказчиков</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 8 часов
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="levelTable_row header">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1">Курс <span class="header-toUpperCase">артдиректор</span></p>
+        </div>
+        <div class="levelTable_cell">
+          <p class="header_item header_item-5">Art director</p>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Продвижение</span> своих идей в дизайне</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Создание</span> проектов под ключ</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Подбор</span> помощников, подбор персонала</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="levelTable_row">
+        <div class="levelTable_cell column-first">
+          <p class="header_item header_item-1"><span class="square-red">Организация</span> своей WEB-студии</p>
+        </div>
+        <div class="levelTable_cell">
+          <div class="table_icon table_yes"></div>
+        </div>
+      </div>
+      <div class="set_footer">
+        Длительность блока: 10 часов
+      </div>
+    </div>
+  </div>
+
+  <div class="privacyPolicy">
+    <div class="container">
+      <div class="privacyPolicy_close">закрыть</div>
+      <div class="block">
+        <h3>1. Сбор информации</h3>
+        <p>Мы собираем информацию, когда вы регистрируетесь на сайте, заходите на свой аккаунт, совершаете покупку, участвуете в акции и/или выходите из аккаунта. Информация включает ваше имя, адрес электронной почты, номер телефона и данные по кредитной карте.</p>
+      </div>
+      <div class="block">
+        <h3>2. Использование информации</h3>
+        <p>Информация, которую мы получаем от вас, может быть использована, чтобы:</p>
+        <ul>
+          <li><span>Сделать услуги соответствующими вашим индивидуальным запросам</span></li>
+          <li><span>Предложить персонализированную рекламу</span></li>
+          <li><span>Улучшить наш сайт</span></li>
+          <li><span>Улучшить систему поддержки пользователей</span></li>
+          <li><span>Связаться с вами по электронной почте</span></li>
+          <li><span>Устроить акцию, конкурс или организовать исследование</span></li>
+        </ul>
+      </div>
+      <div class="block">
+        <h3>3. Защита личных данных при онлайн-продажах</h3>
+        <p>Мы являемся единственным владельцем информации, собранной на данном сайте. Ваши личные данные не будут проданы или каким-либо образом переданы третьим лицам по каким-либо причинам, за исключением необходимых данных для выполнения запроса или транзакции, например, при отправке заказа.</p>
+      </div>
+      <div class="block">
+        <h3>4. Раскрытие информации третьим лицам</h3>
+        <p>Мы не продаем, не обмениваем и не передаем личные данные сторонним компаниям. Это не относится к надежным компаниям, которые помогают нам в работе сайта и ведении бизнеса при условии, что они соглашаются сохранять конфиденциальность информации.</p>
+        <p>Мы готовы делиться информацией, чтобы предотвратить преступления или помочь в их расследовании, если речь идет о подозрении на мошенничество, действиях, физически угрожающих безопасности людей, нарушениях правил использования или в случаях, когда это предусмотрено законом.</p>
+      </div>
+      <div class="block">
+        <h3>5. Защита информации</h3>
+        <p>Мы используем различные средства безопасности, чтобы гарантировать сохранность ваших личных данных. Только те сотрудники, которые работают с конкретным заданием (например, техническая поддержка или проведение оплаты) получают доступ к личным данным. Сервера и компьютеры, на которых записана конфиденциальная информация, находятся в безопасном окружении.</p>
+        <h3>Использование файлов «cookie»</h3>
+        <p>Наши файлы «cookie» используются для улучшения доступа к сайту и определения повторных посещений. Кроме того, они позволяют отследить наиболее интересующие запросы. Файлы «cookie» не передают никакую конфиденциальную информацию.</p>
+      </div>
+      <div class="block">
+        <h3>6. Отказ от подписки</h3>
+        <p>Мы используем электронную почту, чтобы предоставить вам информацию по вашему заказу, новостям компании, информации по продуктам и т.д. Если вы желаете отказаться от подписки, в каждом письме даны подробные инструкции, как вы можете это сделать.</p>
+      </div>
+      <div class="block">
+        <h3>7. Согласие</h3>
+        <p>Пользуясь услугами нашего сайта, вы автоматически соглашаетесь с нашей политикой конфиденциальности.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.refineslide.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init() {
+      myMap = new ymaps.Map("map", {
+        center: [50.479987, 30.489980],
+        zoom: 15
+      });
+
+      myPlacemark = new ymaps.Placemark([50.479987, 30.489980], {
+        hintContent: 'Atlant Black',
+        balloonContent: 'г. Киев ул. Новоконстантиновская, 1Б, оф. 4-1.'
+      });
+      myMap.geoObjects.add(myPlacemark);
+
+      ymaps.route([
+        [50.473573, 30.504577],
+        [50.479987, 30.489980]
+      ], {
+        multiRoute: true,
+        mapStateAutoApply: true,
+        routingMode: 'pedestrian'
+      }).done(function(route) {
+        route.options.set("mapStateAutoApply", true);
+        myMap.geoObjects.add(route);
+      }, function(err) {
+        throw err;
+      }, this);
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Atlant Black'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-logo.png',
+        iconImageSize: [43, 63],
+        iconImageOffset: [-20, -60]
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+/* Calculator */
+
+.calculator {
+  padding-top: 65px;
+  .calcWrapper,
+  .block {
+    font-size: 1.13em;
+    position: relative;
+    width: 100%;
+  }
+  .block {
+    input {
+      display: none;
+    }
+  }
+  .block-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .block_header {
+    font-size: 1.5em;
+    padding: 30px 0;
+    position: relative;
+    text-align: left;
+    &:before {
+      content: '';
+      background-color: #d91111;
+      height: 4px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 165px;
+    }
+  }
+  .switcher {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ebebeb;
+    height: 30px;
+    margin-right: 40px;
+    margin-left: 15px;
+    min-width: 30px;
+    max-width: 30px;
+    position: relative;
+    width: 100%;
+    transition: 0.25s linear;
+    .switcher_point {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      left: -5px;
+      top: 7px;
+      background-color: #fff;
+      transform: rotate(45deg);
+      z-index: 100;
+      transition: left 0.25s linear;
+      &.active {
+        left: 20px;
+      }
+    }
+    &.active {
+      background-color: #d91111;
+      .switcher_point {
+        left: 20px;
+      }
+      .switcher-left {
+        border-right: 15px solid #d91111;
+      }
+      .switcher-right {
+        border-left: 15px solid #d91111;
+      }
+    }
+    .switcher-left,
+    .switcher-right {
+      position: absolute;
+      transition: all 0.25s linear;
+      top: 0;
+    }
+    .switcher-left {
+      border: 15px solid transparent;
+      border-right: 15px solid #ebebeb;
+      right: 30px;
+    }
+    .switcher-right {
+      border: 15px solid transparent;
+      border-left: 15px solid #ebebeb;
+      left: 30px;
+    }
+  }
+  .block_1 {
+    align-items: stretch;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    .block_item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 60px 30px;
+      position: relative;
+      width: 100%;
+      p {
+        margin-top: 34px;
+        text-align: center;
+      }
+    }
+    .block_img {
+      height: 70px;
+      width: 70px;
+      background-image: url(../img/svg-sprite.svg);
+      &-1 {
+        background-size: 1108px 1108px;
+        background-position: 130px 548px;
+      }
+      &-2 {
+        background-size: 1108px 1108px;
+        background-position: 130px 655px;
+      }
+      &-3 {
+        background-size: 1108px 1108px;
+        background-position: 130px -350px;
+      }
+      &-4 {
+        background-size: 1108px 1108px;
+        background-position: 130px -239px;
+      }
+    }
+    .block_item_diamond {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      height: 40px;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      margin-left: -20px;
+      padding: 5px;
+      width: 40px;
+      transform: rotate(45deg);
+      &.active {
+        .block_item_diamond_inner{
+          opacity: 1;
+        }
+      }
+    }
+    .block_item_diamond_inner {
+      background-color: #d91111;
+      opacity: 0;
+      height: 100%;
+      transition: all 0.25s linear;
+      width: 100%;
+    }
+  }
+  .block_2 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .block_item {
+      padding: 45px;
+      position: relative;
+      width: 49%;
+      & > div {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .block_3 {
+    margin-top: 105px;
+    .block-shadow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .block_item {
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 49%;
+      & > div {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        width: 100%;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .block_lines {
+    position: relative;
+    .block_line {
+      background-color: transparent;
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 0;
+      width: 305px;
+      height: 105px;
+      &.block_line-left {
+        background-image: url(../img/ok-gray-left.png);
+        right: calc(50% - 2px);
+      }
+      &.block_line-right {
+        background-image: url(../img/ok-gray-right.png);
+        left: calc(50% - 2px);
+      }
+      &.active {
+        &.block_line-left {
+          background-image: url(../img/ok-red-left.png);
+          z-index: 50;
+        }
+        &.block_line-right {
+          background-image: url(../img/ok-red-right.png);
+          z-index: 50;
+        }
+      }
+    }
+  }
+  .result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    position: relative;
+    text-align: left;
+    &:before,
+    &:after {
+      content: '';
+      background-color: #d91111;
+      height: 4px;
+      left: 0;
+      position: absolute;
+      bottom: 0;
+      width: 165px;
+    }
+    &:after {
+      left: auto;
+      right: 0;
+    }
+    #result-price,
+    #result-projects {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.13em;
+      margin-bottom: 0;
+      max-width: 80%;
+    }
+  }
+  .button-right {
+    text-align: right;
+    .singUpLesson {
+      display: inline-block;
+      margin-bottom: 60px;
+    }
+  }
+}

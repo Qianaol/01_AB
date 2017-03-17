@@ -1,0 +1,54 @@
+/* Eleventh screen */
+
+.contacts {
+  .block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .block_img {
+    background-image: url(../img/svg-sprite.svg);
+    background-size: 1108px 1108px;
+    height: 70px;
+    width: 70px;
+    &-1 {
+      background-position: -285px -316px;
+    }
+    &-2 {
+      background-position: -179px -316px;
+    }
+    &-3 {
+      background-position: -72px -316px;
+    }
+  }
+  .block_content {
+    padding-left: 30px;
+    width: calc(100% - 70px);
+    a {
+      color: #000;
+      display: inline-block;
+    }
+    .tel,
+    .email,
+    p {
+      color: #000;
+      font-size: 0.875em;
+      font-weight: 600;
+      line-height: 1.25em;
+    }
+  }
+}
+
+/* Google Map */
+
+.map-wrapper {
+  margin: 55px auto 65px;
+  #map {
+    background: transparent url(../img/map.jpg) no-repeat center center;
+    background-size: cover;
+    height: 610px;
+    width: 100%;
+    max-width: 1200px;
+  }
+}

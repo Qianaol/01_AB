@@ -1,0 +1,54 @@
+/* Modal Window */
+.modal_bgLayout {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  display: none;
+  left: 50%;
+  margin-left: -280px;
+  margin-top: -267px;
+  max-width: 560px;
+  padding: 80px 100px;
+  position: fixed;
+  top: 60%;
+  text-align: center;
+  width: 100%;
+  z-index: 21000;
+  .modal_close {
+    cursor: pointer;
+    background-color: transparent;
+    color: #df1626;
+    font-size: 1.88em;
+    right: -50px;
+    position: absolute;
+    top: 0;
+    z-index: 800;
+  }
+  .section_header {
+    margin-bottom: 25px;
+    padding: 10px 40px;
+    position: relative;
+    h2 {
+      font-size: 1.5em;
+    }
+    .content_img-small {
+      top: -4px;
+    }
+  }
+  p {
+    font-size: 1.13em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

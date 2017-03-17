@@ -1,0 +1,27 @@
+/* Fifth screen */
+.whatYouGet {
+  padding: 64px 0;
+  .blockItem {
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    height: 270px;
+    width: 270px;
+    p {
+      font-size: 1.13em;
+      line-height: 1.5em;
+      text-align: center;
+      &:first-child {
+        color: #df1626;
+        font-size: 4.5em;
+        font-weight: 600;
+      }
+      &:last-child {
+        margin-top: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/* Third screen */
+
+.forWhom {
+  padding: 45px 0 65px;
+  .column {
+    padding-left: 110px;
+  }
+  .columnBlock-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    &:last-child {
+      margin-top: 60px;
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 1.13em;
+    line-height: 1.38em;
+    margin-left: 30px;
+  }
+  .column_right {
+    padding-left: 80px;
+  }
+  .course {
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 37%;
+      border: 1px solid #000;
+    }
+    h2 {
+      display: inline-block;
+      text-align: center;
+      height: 50px;
+      width: 500px;
+    }
+  }
+  .icon {
+    background-image: url(../img/svg-sprite.svg);
+    background-size: 1108px 1108px;
+    height: 70px;
+    width: 70px;
+    &-1 {
+      background-position: -73px 368px;
+    }
+    &-2 {
+      background-position: -245px 368px;
+    }
+    &-3 {
+      background-position: -159px 368px;
+    }
+    &-4 {
+      background-position: -331px 368px;
+    }
+  }
+}

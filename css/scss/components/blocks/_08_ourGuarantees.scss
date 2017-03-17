@@ -1,0 +1,61 @@
+/* Sixth screen*/
+
+.ourGuarantees {
+  padding: 65px 0 40px;
+  .blockItem {
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .07);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 25px;
+    height: 370px;
+    max-width: 370px;
+    width: 100%;
+    transition: transform 0.25s ease;
+    &:hover {
+      transform: translateY(-10px);
+    }
+    p {
+      font-size: 1.13em;
+      line-height: 1.38em;
+      margin-top: 95px;
+      text-align: center;
+    }
+  }
+  .sprite {
+    background-image: url(../img/svg-sprite.svg);
+    background-size: 1108px 1108px;
+    &-1 {
+      background-position: -390px -588px;
+      height: 94px;
+      width: 74px;
+    }
+    &-2 {
+      background-position: -377px -465px;
+      height: 94px;
+      width: 94px;
+    }
+    &-3 {
+      background-position: -225px -588px;
+      height: 94px;
+      width: 94px;
+    }
+    &-4 {
+      background-position: -223px -463px;
+      height: 94px;
+      width: 94px;
+    }
+    &-5 {
+      background-position: -72px -588px;
+      height: 94px;
+      width: 94px;
+    }
+    &-6 {
+      background-position: -72px -465px;
+      height: 94px;
+      width: 94px;
+    }
+  }
+}

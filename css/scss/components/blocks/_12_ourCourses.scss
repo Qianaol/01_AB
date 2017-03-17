@@ -1,0 +1,135 @@
+/* Nineth screen */
+
+.ourCourses {
+  .course_date {
+    background-color: #df1626;
+    height: 115px;
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    span {
+      color: #fff;
+      text-transform: uppercase;
+      &:first-child {
+        font-weight: 300;
+        font-size: 3.75em;
+      }
+      &:last-child {
+        font-size: 1.13em;
+      }
+    }
+  }
+  .course_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .course {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .07);
+    padding: 44px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .course_head {
+    width: 100%;
+  }
+  .course_image {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 284px;
+    max-width: 400px;
+    width: 100%;
+    &-1 {
+      background-image: url(../img/course-1.jpg);
+    }
+    &-2 {
+      background-image: url(../img/course-2.jpg);
+    }
+    &-3 {
+      background-image: url(../img/course-3.jpg);
+    }
+    &-4 {
+      background-image: url(../img/course-4.jpg);
+    }
+    &-5 {
+      background-image: url(../img/course-5.jpg);
+    }
+  }
+  .course_line-red {
+    height: 4px;
+    background-color: #df1626;
+    margin-top: 25px;
+    width: 270px;
+  }
+  .course_header {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 30px 0;
+    text-transform: uppercase;
+  }
+  .course_text {
+    font-size: 1.13em;
+    font-weight: 400;
+    text-align: left;
+    p {
+      font-size: 1.25em;
+      font-weight: bold;
+      margin-bottom: 22px;
+      text-align: left;
+    }
+    ul {
+      list-style-position: inside;
+    }
+    li {
+      font-weight: 400;
+      list-style-type: square;
+      list-style-position: outside;
+      line-height: 24px;
+      color: #df1626;
+      span {
+        color: #000;
+      }
+    }
+  }
+  .course_content {
+    padding-left: 18px;
+    width: 100%;
+  }
+  .course_price {
+    font-style: italic;
+    font-size: 18px;
+    margin: 30px 0 35px;
+  }
+  .course_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .singUpLesson {
+      font-size: 18px;
+      padding: 16px 20px;
+      max-width: 100%;
+      margin: 0;
+      width: 100%;
+      &-black {
+        margin-top: 35px;
+      }
+    }
+  }
+  .course_footer {
+    width: 100%;
+  }
+}
