@@ -1,6 +1,7 @@
 /* Eleventh screen */
 
 .contacts {
+  padding-top: 30px;
   .block {
     display: flex;
     flex-direction: row;
@@ -47,7 +48,7 @@
   #map {
     background: transparent url(../img/map.jpg) no-repeat center center;
     background-size: cover;
-    height: 610px;
+    height: 500px;
     width: 100%;
     max-width: 1200px;
   }

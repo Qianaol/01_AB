@@ -1,0 +1,140 @@
+@media all and (max-width: 992px) {
+  .forWhom {
+    .columnBlock-wrapper {
+      margin-left: 0;
+    }
+  }
+  
+  .canLearn {
+    .row_forst,
+    .row_second {
+      margin-bottom: 0;
+    }
+    .block {
+      margin-top: 30px;
+    }
+    .block_inner_backward {
+      padding: 15px;
+    }
+    .block-bottom:hover,
+    .block-left:hover,
+    .block-right:hover {
+      transform: translateZ(100px) rotateX(95deg);
+    }
+    .block_inner_face-bottom,
+    .block_inner_face-left,
+    .block_inner_face-right {
+      transform: translateZ(124px);
+    }
+    .block_inner_backward-bottom,
+    .block_inner_backward-left,
+    .block_inner_backward-right {
+      transform: rotateX(-95deg) translateZ(123px);
+    }
+  }
+  
+  .ourGuarantees {
+    .block {
+      &:last-child {
+        flex-direction: row;
+        .blockItem {
+          &:first-child {
+            margin-right: 15px;
+          }
+          &:last-child {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  
+  .levelTable {
+    .flex-row-custom {
+      align-items: center;
+    }
+    .prev {
+      margin-bottom: 30px;
+    }
+  }
+  .table {
+    .header {
+      font-size: 1.3em;
+    }
+    .levelTable_row {
+      line-height: 2em;
+    }
+    .set_footer {
+      font-size: 1.3em;
+    }
+  }
+  
+  .ourTeachers {
+    .block {
+      margin-top: 40px;
+    }
+  }
+  
+  .ourCourses {
+    .course_row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .course {
+      width: 100%;
+    }
+    .course_image {
+      height: auto;
+      max-width: 100%;
+    }
+    .course_content {
+      width: 100%;
+    }
+    .course.course_top {
+      flex-direction: column;
+      align-items: center;
+      .course_content {
+        padding: 0;
+      }
+      .course_line-red {
+        margin-top: 25px;
+      }
+    }
+    .course_price {
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+      font-style: italic;
+      padding-bottom: 24px;
+      font-size: 1.13em;
+      margin: 30px 0 24px;
+    }
+    .course_btns {
+      align-items: flex-end;
+      .singUpLesson {
+        max-width: 250px;
+      }
+    }
+  }
+  
+  .contacts {
+    .block {
+      margin-bottom: 40px;
+    }
+    .map-wrapper {
+      margin-top: 0;
+    }
+  }
+  
+  .footer {
+    margin-top: 50px;
+    .container .footer_item {
+      text-align: center;
+      &:last-child {
+        margin-top: 20px;
+      }
+      img {
+        bottom: 0;
+        top: -154px;
+      }
+    }
+  }
+}

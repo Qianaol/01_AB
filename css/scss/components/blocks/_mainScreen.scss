@@ -161,11 +161,17 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .section_header_block {
+    margin-bottom: 50px;
+  }
+  
   .section_header {
     padding: 15px;
     h2 {
-      padding: 20px 120px;
+      padding: 20px 80px;
       text-transform: lowercase;
+      max-width: 620px;
+      width: 100%;
       &:first-letter {
         text-transform: uppercase;
       }

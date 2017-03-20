@@ -1,0 +1,140 @@
+@media all and (max-width: 767px) {
+  .wrapper-left,
+  .wrapper-right {
+    display: none!important;
+  }
+  
+  .section_header {
+    h2,
+    h2.header-white {
+      font-size: 1.75em;
+    }
+  }
+  
+  .mainScreen_content {
+    .ourGuarantees {
+      .blockItem-last {
+        margin: 0 auto 25px;
+      }
+    }
+    .wrapper.wrapper-durkBg {
+      display: none;
+    }
+    .section_header {
+      h2 {
+        padding: 10px 80px;
+      }
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.13em;
+    }
+  }
+  
+  .calculator {
+    .block_1 {
+      .block_item {
+        padding: 60px 15px;
+      }
+    }
+    .block_2 .block_item,
+    .block_3 .block_item {
+      padding: 20px;
+    }
+    .result {
+      p {
+        max-width: 60%;
+      }
+    }
+  }
+  
+  .canLearn {
+    padding-bottom: 25px;
+    .row_first, 
+    .row_second {
+      margin-bottom: 0;
+    }
+  }
+  
+  .whyDesign-wrapper {
+    padding-bottom: 30px;
+    .whyDesign_text {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  .forWhom {
+    .column-right {
+      margin-top: 60px;
+    }
+  }
+  
+  .whatYouGet_content {
+    .col-md-6:nth-child(2) {
+      margin-top: 40px;
+    }
+  }
+  
+  .ourGuarantees {
+    .blockItem-last {
+      margin: 0 auto 25px;
+    }
+    .block {
+      &:last-child {
+        flex-direction: column;
+        .blockItem {
+          &:first-child {
+            margin: 0 auto 25px;
+          }
+          &:last-child {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  
+  .table {
+    .header {
+      font-size: 0.9em;
+      font-weight: bold;
+      .column-first .header_item-1 {
+        font-size: 1.1em;
+      }
+    }
+    .levelTable_row {
+      font-size: 0.8em;
+      line-height: 1.6em;
+    }
+    img {
+      height: auto;
+      max-width: 20px;
+    }
+    .set_footer {
+      font-size: 0.9em;
+      .singUpLesson {
+        max-width: 150px;
+      }
+    }
+  }
+  .table-wrapper .modal_close, .table-wrapper-juniorMobile .modal_close, .table-wrapper-middleMobile .modal_close, .table-wrapper-seniorMobile .modal_close, .table-wrapper-artMobile .modal_close {
+    top: auto;
+    bottom: 0;
+    right: 70px;
+  }
+  
+  .library {
+    background-position: left -284px center;
+    .library-dark-bg {
+      padding: 100px 0;
+      height: 100%;
+      width: 100%;
+      p {
+        background-color: rgba(0,0,0,.5);
+        padding: 34px;
+      }
+    }
+  }
+}

@@ -9,21 +9,29 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/refineslide.css" rel="stylesheet">
-  <link href="css/styles.min.css" rel="stylesheet">
-
 
   <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="img/favicon/manifest.json">
+  
+  <link href="css/styles.min.css" rel="stylesheet">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    ga('create', 'UA-94008536-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
   <noscript><p>Ваш браузер не поддерживает скрипты!</p></noscript>
+  <div id="preloader">
+    <div class="preloader_icon"></div>
+  </div>
   <div class="modal_bgLayout"></div>
   <div class="modal">
     <div class="modal_close">&#10006;</div>
@@ -34,7 +42,7 @@
 
       <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
     </div>
-    <p>и наш менеджер свяжеться с вами</p>
+    <p>и наш методист свяжеться с вами</p>
 
     <form action="zakaz.php" method="post" class="amoCRM_form">
       <div class="input-wrapper">
@@ -72,11 +80,11 @@
                 </ul>
                 <ul class="nav nav-right">
                   <li class="navItem">
-                    <a href="#forWhom">Для кого</a></li>
-                  <!--
+                    <a href="tel:+380632276114">Позвонить</a></li>
+                    
                   <li class="navItem">
-                    <a href="#ourTeachers">Преподаватели</a></li>
--->
+                    <a href="#forWhom">Для кого</a></li>
+
                   <li class="navItem">
                     <a href="#contacts">Контакты</a></li>
                 </ul>
@@ -125,10 +133,28 @@
 
             <ul class="demo">
               <li class="group">
+                <h2 class="header-onWhite">Маркетинг-стратегию</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Крутой дизайн</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Продающие тексты</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Интернет-магазины</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Мобильные версии сайтов</h2>
+              </li>
+              <li class="group">
+                <h2 class="header-onWhite">Эффективные промо-сайты</h2>
+              </li>
+              <li class="group">
                 <h2 class="header-onWhite">Веб-проекты под ключ</h2>
               </li>
               <li class="group">
-                <h2 class="header-onWhite">&nbsp;&nbsp;&nbsp;Догорие веб-сайты&nbsp;&nbsp;&nbsp;</h2>
+                <h2 class="header-onWhite">&nbsp;&nbsp;&nbsp;Дорогие сайты&nbsp;&nbsp;&nbsp;</h2>
               </li>
               <li class="group">
                 <h2 class="header-onWhite">Крутые Лендинг Пейдж</h2>
@@ -180,11 +206,188 @@
     </section>
   </div>
 
+  <div class="canLearn wrapper">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Навыки, которыми ты овладеешь</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row_first">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-1"></div>
+                <p class="text">Адаптивный дизайн сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Ты сможешь создавать дизайн веб-страниц, обеспечивающий правильное отображение сайта на экранах устройств разных размеров и разрешений -  от телефона до Smart TV.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-2"></div>
+                <p class="text">UI/UX проектирование</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Ты изучишь технологию, как разработать сайт максимально удобным и привлекательным для пользователя.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-3"></div>
+                <p class="text">Адаптивная верстка</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Ты научишься верстать веб-страницы, которые динамически подстраиваются под окно браузера.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row_second">
+        <div class="col-xs-12 col-sm-4 col-md-6">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-4"></div>
+                <p class="text">Дизайн мобильных версий сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Всё больше компаний понимают, что версия их сайта для Android / iOS – дополнительный источник клиентов. Многие хотят её заказать, и ты сможешь на этом заработать.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-left">
+              <div class="block_inner block_inner_face block_inner_face-left">
+                <div class="block_img block_img-5"></div>
+                <p class="text">Веб-разработка</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-left">
+                <ul>
+                  <li class="li">Ты научишься создавать веб-страницы с помощью текстового или визуального редактора.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-right">
+              <div class="block_inner block_inner_face block_inner_face-right">
+                <div class="block_img block_img-6"></div>
+                <p class="text">Копирайтинг</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-right">
+                <ul>
+                  <li class="li">Ты сможешь писать эффективные и прибыльные тексты для рекламы и презентаций.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row_third">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-right">
+              <div class="block_inner block_inner_face block_inner_face-right">
+                <div class="block_img block_img-7"></div>
+                <p class="text">Маркетинг и продажи</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-right">
+                <ul>
+                  <li class="li">Ты сумеешь выбрать самый востребованный товар и подать его максимально выгодно.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="block_outside">
+            <div class="block block-left">
+              <div class="block_inner block_inner_face block_inner_face-left">
+                <div class="block_img block_img-8"></div>
+                <p class="text">Проекты под ключ</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-left">
+                <ul>
+                  <li class="li">Ты будешь в состоянии сделать весь проект самостоятельно, без привлечения сторонних разработчиков.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-6">
+          <div class="block_outside">
+            <div class="block block-bottom">
+              <div class="block_inner block_inner_face block_inner_face-bottom">
+                <div class="block_img block_img-9"></div>
+                <p class="text">Дизайн десктопных версий сайтов</p>
+              </div>
+              <div class="block_inner block_inner_backward block_inner_backward-bottom">
+                <ul>
+                  <li class="li">Ты будешь знать, как сделать внешнее оформление сайта интересным для посетителей и заставить его продавать товары и услуги.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--  Styles are in _ourAim -->
+  <div class="wrapper trustUs" id="trustUs">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-white header-onWhite">Ваши знания в надежных руках</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Нам можно доверить ваше обучение, так как мы являемся практиками и на базе академии у нас свое производство сайтов. Мы делаем сайты и учим как их делать.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на бесплатный урок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="wrapper calculator">
     <div class="wrapper section_header_block">
       <div class="section_header">
         <img src="img/left-bracket.png" alt="" class="content_img content_img-small content_img-left">
-        <h2 class="header-onWhite">Калькулятор доходов дизайнера</h2>
+        <h2 class="header-onWhite">Посчитай доход дизайнера</h2>
         <img src="img/right-bracket.png" alt="" class="content_img content_img-small content_img-right">
       </div>
     </div>
@@ -234,7 +437,7 @@
               </div>
             </div>
             <div class="block_header">
-              Выбери навыки которые ты хотел бы в себе улучшить:
+              Выбери навыки, которые ты хотел бы улучшить:
             </div>
             <div class="block block_2">
               <div class="block_item block_item-left block-shadow">
@@ -371,153 +574,13 @@
     </div>
   </div>
 
-  <div class="canLearn wrapper">
-    <div class="wrapper section_header_block">
-      <div class="section_header">
-        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
-        <h2 class="header-onWhite">Навыки, которыми ты овладеешь</h2>
-        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
-      </div>
-    </div>
-    <div class="container">
-      <div class="row row_first">
-        <div class="col-xs-12 col-sm-4 col-md-4">
-          <div class="block_outside">
-            <div class="block block-bottom">
-              <div class="block_inner block_inner_face block_inner_face-bottom">
-                <div class="block_img block_img-1"></div>
-                <p class="text">Адаптивный дизайн сайтов</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-bottom">
-                <ul>
-                  <li class="li">Дизайн веб-страниц, обеспечивающий правильное отображение сайта на различных устройствах, подключённых к интернету и динамически подстраивающийся под заданные размеры окна браузера</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-          <div class="block_outside">
-            <div class="block block-bottom">
-              <div class="block_inner block_inner_face block_inner_face-bottom">
-                <div class="block_img block_img-2"></div>
-                <p class="text">UI/UX проектирование</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-bottom">
-                <ul>
-                  <li class="li">Разработка пользовательских интерфейсов при грамотном подходе строится таким образом, чтобы создать его максимально привлекательным и удобным для оптимизации его взаимодействия с пользователем</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-          <div class="block_outside">
-            <div class="block block-bottom">
-              <div class="block_inner block_inner_face block_inner_face-bottom">
-                <div class="block_img block_img-3"></div>
-                <p class="text">Адаптивная верстка</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-bottom">
-                <ul>
-                  <li class="li">Подход, предполагающий изменение дизайна в зависимости от поведения пользователя, размера экрана, платформы и ориентации девайса.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row_second">
-        <div class="col-xs-12 col-sm-4 col-md-6">
-          <div class="block_outside">
-            <div class="block block-bottom">
-              <div class="block_inner block_inner_face block_inner_face-bottom">
-                <div class="block_img block_img-4"></div>
-                <p class="text">Дизайн мобильных версий сайтов</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-bottom">
-                <ul>
-                  <li class="li">Для любой коммерческой компании вывод очевиден: если компания планирует развивать свой бизнес, увеличивать объем продаж и доходность за счет увеличения количества посетителей сайта, то организации просто необходимо задуматься о создании мобильной версии сайта.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="block_outside">
-            <div class="block block-left">
-              <div class="block_inner block_inner_face block_inner_face-left">
-                <div class="block_img block_img-5"></div>
-                <p class="text">Веб-разработка</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-left">
-                <ul>
-                  <li class="li">Процесс создания веб-страницы, с помощью текстового или визуального редактора</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="block_outside">
-            <div class="block block-right">
-              <div class="block_inner block_inner_face block_inner_face-right">
-                <div class="block_img block_img-6"></div>
-                <p class="text">Копирайтинг</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-right">
-                <ul>
-                  <li class="li">Профессиональная деятельность по написанию рекламных и презентационных текстов</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row_third">
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="block_outside">
-            <div class="block block-right">
-              <div class="block_inner block_inner_face block_inner_face-right">
-                <div class="block_img block_img-7"></div>
-                <p class="text">Маркетинг и продажи</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-right">
-                <ul>
-                  <li class="li">Организация производства и сбыта продукции, основанная на изучении потребности рынка в товарах и услугах</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="block_outside">
-            <div class="block block-left">
-              <div class="block_inner block_inner_face block_inner_face-left">
-                <div class="block_img block_img-8"></div>
-                <p class="text">Проекты под ключ</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-left">
-                <ul>
-                  <li class="li">Любой проект, который строится или производится компанией, которая в итоге передает его в полностью завершенном виде заказчику.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-6">
-          <div class="block_outside">
-            <div class="block block-bottom">
-              <div class="block_inner block_inner_face block_inner_face-bottom">
-                <div class="block_img block_img-9"></div>
-                <p class="text">Дизайн десктопных версий сайтов</p>
-              </div>
-              <div class="block_inner block_inner_backward block_inner_backward-bottom">
-                <ul>
-                  <li class="li">Дизайн сайта – это внешнее его оформление, которое призвано, как минимум не отпугнуть посетителя Вашего интернет-ресурса,а наоборот: завлечь, заинтересовать и продать вашу услугу либо продукт.</li>
-                </ul>
-              </div>
-            </div>
+  <div class="wrapper library">
+    <div class="library-dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-sm-offset-7 col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7">
+            <p>У нас в академии есть бесплатная библиотека для наших студентов. В ней каждый сможет найти для себя что-то полезное</p>
+            <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на бесплатный урок</button>
           </div>
         </div>
       </div>
@@ -540,7 +603,7 @@
               <div class="icon icon-1"></div>
             </div>
             <div class="whyDesign_text">
-              <span>Средний доход дизайнера 25000 в месяц</span>
+              <span>Средний доход дизайнера 2500 в месяц</span>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -772,11 +835,17 @@
     </div>
   </div>
 
-
   <div class="wrapper levelTable" id="levelTable">
+    <div class="wrapper section_header_block">
+      <div class="section_header">
+        <img src="img/left-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-left">
+        <h2 class="header-onWhite">Наши курсы</h2>
+        <img src="img/right-bracket.png" alt="bracket icon" class="content_img content_img-small content_img-right">
+      </div>
+    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      <div class="row flex-row-custom">
+        <div class="leveTable_item col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <div class="prev">
             <div class="prev_head prev_head-1">
               <div class="prev_icon prev_icon-1"></div>
@@ -786,107 +855,131 @@
             <div class="prev_footer">
               <div class="prev_footer_item">
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-time"></div>
+                  </div>
                   <div class="prev_footer_price-right">3 месяца</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Часов:</div>
-                  <div class="prev_footer_price-right">3 месяца</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-month"></div>
+                  </div>
+                  <div class="prev_footer_price-right">82 ч.</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Цена:</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-price"></div>
+                  </div>
                   <div class="prev_footer_price-right">7800 грн</div>
                 </div>
               </div>
               <div class="prev_footer_item">
-                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Купить этот курс</button>
                 <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseJunior">Программа курса</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="leveTable_item col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <div class="prev">
             <div class="prev_head prev_head-2">
               <div class="prev_icon prev_icon-2"></div>
-              <div class="prev_header">Junior</div>
+              <div class="prev_header">middle</div>
             </div>
-            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_text">Тебе уже извесны азы дизайна и ты хочешь большего? Тогда этот блок для тебя. Здесь ты сможешь прокачать свои навыки дизайна и не только</div>
             <div class="prev_footer">
               <div class="prev_footer_item">
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-time"></div>
+                  </div>
                   <div class="prev_footer_price-right">3 месяца</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Часов:</div>
-                  <div class="prev_footer_price-right">3 месяца</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-month"></div>
+                  </div>
+                  <div class="prev_footer_price-right">98 ч.</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Цена:</div>
-                  <div class="prev_footer_price-right">7800 грн</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-price"></div>
+                  </div>
+                  <div class="prev_footer_price-right">11 400 грн</div>
                 </div>
               </div>
               <div class="prev_footer_item">
-                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Купить этот курс</button>
                 <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseMiddle">Программа курса</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="leveTable_item col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <div class="prev">
             <div class="prev_head prev_head-3">
               <div class="prev_icon prev_icon-3"></div>
-              <div class="prev_header">Junior</div>
+              <div class="prev_header">senior</div>
             </div>
-            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_text">Надоели однотипные рутинные задания? Хочешь увеличить арсенал навыков и стримишься к карьерному росту? В таком случае — добро пожаловать.</div>
             <div class="prev_footer">
               <div class="prev_footer_item">
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-time"></div>
+                  </div>
                   <div class="prev_footer_price-right">3 месяца</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Часов:</div>
-                  <div class="prev_footer_price-right">3 месяца</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-month"></div>
+                  </div>
+                  <div class="prev_footer_price-right">126 ч.</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Цена:</div>
-                  <div class="prev_footer_price-right">7800 грн</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-price"></div>
+                  </div>
+                  <div class="prev_footer_price-right">16 500 грн</div>
                 </div>
               </div>
               <div class="prev_footer_item">
-                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Купить этот курс</button>
                 <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseSenior">Программа курса</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="leveTable_item col-xs-12 col-sm-6 col-md-3 col-lg-3">
           <div class="prev">
             <div class="prev_head prev_head-4">
               <div class="prev_icon prev_icon-4"></div>
-              <div class="prev_header">Junior</div>
+              <div class="prev_header">art director</div>
             </div>
-            <div class="prev_text">Этот блок мы создали для тех ребят — кто хочет пробиться в сферу дизайна и впервые с этим столкнулись. Мы покажем все азы и научим всем основам</div>
+            <div class="prev_text">Желаешь быть руководителем? Знаешь толк в командной работе? Хочешь быть лучшим в своей области? Тогда поучаствовуй в отборе. Тут кого попало не берем</div>
             <div class="prev_footer">
               <div class="prev_footer_item">
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Длительность:</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-time"></div>
+                  </div>
                   <div class="prev_footer_price-right">3 месяца</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Часов:</div>
-                  <div class="prev_footer_price-right">3 месяца</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-month"></div>
+                  </div>
+                  <div class="prev_footer_price-right">142 ч.</div>
                 </div>
                 <div class="prev_footer_price">
-                  <div class="prev_footer_price-left">Цена:</div>
-                  <div class="prev_footer_price-right">7800 грн</div>
+                  <div class="prev_footer_price-left">
+                    <div class="levelTable_icon levelTable_icon-price"></div>
+                  </div>
+                  <div class="prev_footer_price-right">2000 USD</div>
                 </div>
               </div>
               <div class="prev_footer_item">
-                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Записаться на курс</button>
+                <button type="button" class="singUpLesson singUpLesson-red getFreeLessonBtn">Хочу в отбор</button>
                 <button type="button" class="singUpLesson singUpLesson-black getCourses getCourseArtDer">Программа курса</button>
               </div>
             </div>
@@ -1018,7 +1111,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-md-offset-3">
-          <p>Тогда записывайся на наш бесплатный урок</p>
+          <p>Записывайся на наш бесплатный урок</p>
         </div>
         <div class="col-md-6 col-md-offset-3 col-sm-12">
           <form action="zakaz.php" method="post" class="amoCRM_form">
@@ -1091,7 +1184,7 @@
       <div class="row">
         <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4">ATLANT BLACK © 2016-2017</div>
         <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4"><img src="img/footer-logo.png" alt="footer logo"></div>
-        <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4"><span class="privacyPolicy_btn" data-privacy="false">Политика конфеденциальности</span></div>
+        <div class="footer_item footer_text col-xs-12 col-sm-12 col-md-4 col-lg-4"><span class="privacyPolicy_btn" data-privacy="false">Политика конфиденциальности </span></div>
       </div>
     </div>
   </div>
@@ -1409,7 +1502,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 44.5 часа
+        Длительность блока: 52 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -1517,7 +1612,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 12 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -1659,7 +1756,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 23.5 часа
+        Длительность блока: 27 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -1784,7 +1883,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -1926,7 +2027,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 16 часов
+        Длительность блока: 18.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2017,7 +2120,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 8 часов
+        Длительность блока: 14 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2108,7 +2213,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
   </div>
@@ -2262,7 +2369,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 44.5 часа
+        Длительность блока: 52 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2316,7 +2425,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 12 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2386,7 +2497,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 23.5 часа
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2448,7 +2561,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2518,7 +2633,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 16 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2564,7 +2681,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 8 часов
+        Длительность блока: 7 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2610,7 +2729,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
   </div>
@@ -2763,7 +2884,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 44.5 часа
+        Длительность блока: 52 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2817,7 +2940,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 12 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2887,7 +3012,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 23.5 часа
+        Длительность блока: 27 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -2949,7 +3076,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3019,7 +3148,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 16 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3065,7 +3196,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 8 часов
+        Длительность блока: 7 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3111,7 +3244,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: - ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
   </div>
@@ -3264,7 +3399,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 44.5 часа
+        Длительность блока: 52 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3318,7 +3455,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 12 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3388,7 +3527,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 23.5 часа
+        Длительность блока: 27 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3450,7 +3591,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3520,7 +3663,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 16 часов
+        Длительность блока: 18.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3566,7 +3711,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 8 часов
+        Длительность блока: 14 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3612,7 +3759,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
   </div>
@@ -3765,7 +3914,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 44.5 часа
+        Длительность блока: 52 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3819,7 +3970,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 12 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3889,7 +4042,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 23.5 часа
+        Длительность блока: 27 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -3951,7 +4106,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -4021,7 +4178,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 16 часов
+        Длительность блока: 18.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -4067,7 +4226,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 8 часов
+        Длительность блока: 14 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
 
@@ -4113,7 +4274,9 @@
         </div>
       </div>
       <div class="set_footer">
-        Длительность блока: 10 часов
+        Длительность блока: 11.5 ч.
+        
+        <button type="button" class="singUpLesson singUpLesson-red singUpLesson-darkBg getFreeLessonBtn">Записаться на курс</button>
       </div>
     </div>
   </div>
@@ -4163,14 +4326,17 @@
     </div>
   </div>
 
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/jquery.refineslide.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.1.1.min.js" defer></script>
+  <script src="js/jquery.refineslide.min.js" defer></script>
+<!--  <script src="js/jquery.nicescroll.min.js" defer></script>-->
+  <script src="js/jquery.animateNumber.min.js" defer></script>
+  <script src="js/parallax.min.js" defer></script>
+  <script src="js/scripts.min.js" defer></script>
 
-  <script type="text/javascript">
+
+  
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" defer>
     ymaps.ready(init);
     var myMap,
       myPlacemark;
@@ -4214,6 +4380,7 @@
     }
 
   </script>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43595784 = new Ya.Metrika({ id:43595784, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43595784" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>

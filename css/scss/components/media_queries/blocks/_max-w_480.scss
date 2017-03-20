@@ -1,0 +1,125 @@
+@media all and (max-width: 480px) {
+  .amoCRM_form button {
+    font-size: 0.8em;
+  }
+  
+  .wrapper.wrapper-durkBg {
+    margin-bottom: 50px;
+  }
+  
+  .mainScreen_nav {
+    &:after {
+      top: -40px;
+    }
+    .mnu_icon .mnu_icon-text {
+      display: none;
+    }
+  }
+  
+  .mainScreen-contentWrapper {
+    .content {
+      p {
+        padding: 20px;
+      }
+    }
+  }
+  
+  .mainScreen_content .section_header h2 {
+    padding: 15px;
+  }
+  
+  .section_header_block {
+    margin-bottom: 40px;
+  }
+  .section_header {
+    padding: 10px;
+    h2,
+    h2.header-white {
+      font-size: 1.25em;
+    }
+    h2.header-onWhite {
+      padding-bottom: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #f00;
+      }
+    }
+    .content_img {
+      display: none;
+    }
+  }
+  
+  .forWhom {
+    .columnBlock-wrapper {
+      flex-direction: column;
+      img {
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+  
+  .ourCourses {
+    .course {
+      padding: 15px;
+    }
+    .course_btns {
+      flex-direction: column;
+      height: 150px;
+      align-items: center;
+      .singUpLesson {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        &-black {
+          margin-left: 0;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+  
+  .ourAim {
+    p {
+      font-size: 1.2em;
+    }
+  }
+  
+  .contacts {
+    .block {
+      flex-direction: column;
+    }
+    .block_content {
+      margin-top: 20px;
+      padding: 0;
+      text-align: center;
+      span {
+        margin-left: -20px;
+      }
+    }
+  }
+  
+  .formBlock,
+  .whatYouGet,
+  .ourGuarantees,
+  .ourAim {
+    padding: 30px 0;
+  }
+  
+  
+  .library {
+    .library-dark-bg {
+      p {
+        background-color: rgba(0,0,0,.7);
+      }
+    }
+  }
+}

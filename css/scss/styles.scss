@@ -1,3 +1,8 @@
+/* Helpers */
+
+@import "components/helpers/_bootstrap.min.scss";
+
+
 /* Global imports */
 
 @import "components/global/_reset.scss";
@@ -8,25 +13,30 @@
 @import "components/global/_modal.scss";
 @import "components/global/_scroll.scss";
 @import "components/global/_amoForm.scss";
+@import "components/global/_preloader.scss";
+
+
+@import "components/helpers/_refineslide.scss";
 
 /* Personal imorts */
 
-@import "components/blocks/_01_mainScreen.scss";
-@import "components/blocks/_02_calculator.scss";
-@import "components/blocks/_03_canLearn.scss";
-@import "components/blocks/_04_whyDesing.scss";
-@import "components/blocks/_05_forWhom.scss";
-@import "components/blocks/_06_formBlock.scss";
-@import "components/blocks/_07_whatYouGet.scss";
-@import "components/blocks/_08_ourGuarantees.scss";
-@import "components/blocks/_09_ourAim.scss";
-@import "components/blocks/_10_levelTable.scss";
-@import "components/blocks/_11_ourTeachers.scss";
-@import "components/blocks/_12_ourCourses.scss";
-@import "components/blocks/_13_contacts.scss";
+@import "components/blocks/_mainScreen.scss";
+@import "components/blocks/_calculator.scss";
+@import "components/blocks/_canLearn.scss";
+@import "components/blocks/_whyDesing.scss";
+@import "components/blocks/_forWhom.scss";
+@import "components/blocks/_formBlock.scss";
+@import "components/blocks/_whatYouGet.scss";
+@import "components/blocks/_ourGuarantees.scss";
+@import "components/blocks/_ourAim.scss";
+@import "components/blocks/_levelTable.scss";
+@import "components/blocks/_ourTeachers.scss";
+@import "components/blocks/_ourCourses.scss";
+@import "components/blocks/_contacts.scss";
+@import "components/blocks/_library.scss";
 
 @import "components/blocks/_footer.scss";
-@import "components/blocks/_privacyPolicy.scss";
+@import "components/global/_privacyPolicy.scss";
 
 /* Media queries */
 

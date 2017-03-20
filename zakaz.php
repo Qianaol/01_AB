@@ -13,7 +13,7 @@
 
 /* Оборачиваем в try{} catch(){}, чтобы отлавливать исключения */
 try {
-    $api = new Handler('new58b5357d0de5f', 'info@atlant.black');
+    $api = new Handler('new58cfda0262beb', 'khrypun.dev@gmail.com');
 
 
     /* Создаем сделку,
@@ -99,42 +99,3 @@ try {
     echo $e->getMessage();
 }
 ?>
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Atlant Black</title>
-  <!-- Bootstrap -->
-  <meta charset="UTF-8">
-  <meta name="author" content="Oleksandr Khrypun">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/thankyou.min.css" rel="stylesheet">
-
-
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="img/favicon/manifest.json">
-  <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-  <div class="tankyou_wrapper">
-    <div class="header_line-withShadow"></div>
-    <img class="thankyou-logo" src="img/logo-2.png" alt="Logo">
-
-    <div class="wrapper section_header_block thnakyou_section_header">
-      <div class="section_header">
-        <img src="img/left-bracket.png" alt="" class="content_img content_img-small content_img-left">
-        <h2 class="header-onWhite">Спасибо за вашу заявку</h2>
-        <img src="img/right-bracket.png" alt="" class="content_img content_img-small content_img-right">
-      </div>
-      <p class="thankyou-massage">Наш менеджер свяжется с вами в близжайшее время</p>
-    </div>
-  
-  
-    <a href="index.html" class="thankyou-goback">Вернуться назад</a>
-  </div>
-</body>
-</html>

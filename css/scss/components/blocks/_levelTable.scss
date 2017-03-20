@@ -1,21 +1,31 @@
 .levelTable {
   padding-top: 70px;
+  padding-bottom: 30px;
+  .flex-row-custom {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
 }
   
 .prev {
   font-size: 1em;
   box-shadow: 0 0 10px rgba(0,0,0,0.07);
-  height: auto;
-  margin-bottom: 30px;
+  height: 100%;
   padding: 24px;
   width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   .prev_head {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     
-    height: 100%;
     padding: 30px 15px;
     width: 100%;
     &-1 {
@@ -36,10 +46,23 @@
       text-transform: capitalize;
     }
     .prev_icon {
-      background: transparent url(../img/icon-1.png) no-repeat center center;
+      background-image: url(../img/table_icons.svg);
+      background-size: 350px 350px;
       height: 52px;
       margin-bottom: 25px;
       width: 52px;
+      &-1 {
+        background-position: -19px -183px;
+      }
+      &-2 {
+        background-position: -105px -183px;
+      }
+      &-3 {
+        background-position: -191px -183px;
+      }
+      &-4 {
+        background-position: -277px -183px;
+      }
     }
   }
   
@@ -47,7 +70,10 @@
     font-size: 14px;
     margin-top: 30px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .prev_footer {
+    width: 100%;
   }
   
   .prev_footer_price {
@@ -59,8 +85,26 @@
     border-bottom: 1px solid #ebebeb;
     display: flex;
     padding: 18px 0;
+    &:first-child {
+      border-top: 1px solid #ebebeb;
+    }
     &:last-child {
       margin-bottom: 16px;
+    }
+    .levelTable_icon {
+      background-image: url(../img/table_icons.svg);
+      background-size: 225px 225px;
+      height: 25px;
+      width: 25px;
+      &-month {
+        background-position: -12px -68px;
+      }
+      &-time {
+        background-position: -99px -68px;
+      }
+      &-price {
+        background-position: -55px -68px;
+      }
     }
   }
   
@@ -80,6 +124,7 @@
 .table-wrapper-middleMobile,
 .table-wrapper-seniorMobile,
 .table-wrapper-artMobile {
+  overflow-y: scroll;
   display: none;
   background-color: #fff;
   position: fixed;
@@ -104,6 +149,7 @@
     height: 40px;
     text-align: center;
     line-height: 40px;
+    z-index: 1000;
   }
 }
 
@@ -130,6 +176,17 @@
     margin-bottom: 0;
   }
   
+  .singUpLesson {
+    margin: 0;
+    display: inline-block;
+    font-size: 0.8em;
+    max-width: 280px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+  }
+  
   .open {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -146,6 +203,14 @@
     padding-top: 15px;
     position: relative;
     text-align: left;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     &:after {
       content: '';
       background-color: #df1626;
@@ -249,7 +314,7 @@
         background-color: #ff4e5c;
       }
       &-5 {
-        background-color: #ed0719;
+        background-color: #000;
       }
     }
   }

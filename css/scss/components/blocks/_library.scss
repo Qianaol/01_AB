@@ -1,0 +1,17 @@
+.library {
+//  background: #737373 url(../img/library-bg.jpg) no-repeat right center;
+  background-size: cover;
+  text-align: left;
+  .library-dark-bg {
+    padding: 350px 0;
+  }
+  p {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 70px;
+  }
+  .singUpLesson {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}

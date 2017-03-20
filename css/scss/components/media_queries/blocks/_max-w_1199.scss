@@ -1,0 +1,86 @@
+@media all and (max-width: 1199px) {
+  .mainScreen_nav {
+    &:after {
+      margin-left: -120px;
+      border: 120px solid transparent;
+      border-top: 160px solid #fff
+    }
+  }
+  
+  .logo-wrapper {
+    margin-left: -25px;
+    width: 50px;
+  }
+  
+  .canLearn {
+    .block_inner_backward {
+      padding: 15px;
+    }
+    .block-bottom:hover {
+      transform: translateZ(100px) rotateX(95deg);
+    }
+    .block_inner_face-bottom {
+      transform: translateZ(124px);
+    }
+    .block_inner_backward-bottom {
+      transform: rotateX(-95deg) translateZ(123px);
+    }
+
+    .block-left:hover {
+      transform: translateZ(100px) rotateY(95deg);
+    }
+    .block_inner_face-left {
+      transform: translateZ(100px);
+    }
+    .block_inner_backward-left {
+      transform: rotateY(-95deg) translateZ(95px);
+    }
+
+    .block-right:hover {
+      transform: translateZ(100px) rotateY(-95deg);
+    }
+    .block_inner_face-right {
+      transform: translateZ(100px);
+    }
+    .block_inner_backward-right {
+      transform: rotateY(95deg) translateZ(95px);
+    }
+  }
+  
+  .library {
+    background-position: center center;
+  }
+  
+  .ourGuarantees {
+    .blockItem-last {
+      margin-right: 70px;
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:last-child {
+        flex-direction: row;
+      }
+    }
+  }
+  
+  .whatYouGet_content {
+    .col-md-6 {
+      margin-top: 40px;
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  .ourCourses {
+    .course-wrapper:nth-child(2) {
+      .course_price {
+        margin-top: 84px;
+      }
+    }
+  }
+}
